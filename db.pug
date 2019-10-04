@@ -1,0 +1,11 @@
+- var db_array = []
+
+each val in db_array
+    .array_item_block(id=val.id)
+        .item_title!= val.date
+        .item_content!= val.docType
+        .item_content!= val.image
+        .item_content!= val.price
+        .item_content!= val.prodName
+        .item_content!= val.quantity
+        .item_content!= val.removed
