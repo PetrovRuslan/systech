@@ -11,3 +11,5 @@ INSERT INTO myTable(date, docType, id, image, prodName, price, quantity, removed
 
 #удаление timestamp из json
 sed -E 's/[0-9]{2}:[0-9]{2}:[0-9]{2}//' > file.pug
+#минификация json файла
+jq -c . < input.json > output.json
