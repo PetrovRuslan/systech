@@ -14,12 +14,3 @@ db_array.forEach(function(item){
         result[d] = [item];
     }
 });
-
-function testObject(result) {
-  for (var key in result) {
-    console.log(key);
-    for (var item in key[item]) {
-      console.log(item);
-    }
-  }
-}
