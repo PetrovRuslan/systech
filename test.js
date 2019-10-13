@@ -16,6 +16,9 @@ db_array.forEach(function(item){
         // result[d].push(quant);
         result[d] = [item];
     }
+    for (var b in result){
+		result[d].quantityDocs = result[d].length;
+    }
 });
 
 var template = `
@@ -24,9 +27,11 @@ html
     head
         title systech
         link(rel="stylesheet", href="stylesheets.css")
+        script(src="parse_hack.js")
     body
         each key, val in db_result
             .docs-wrap!= val
+            .docs-wrap!= key.quantityDocs
                 each prop in key
                     .item_content!= prop.docType
                     .item_content!= prop.id
