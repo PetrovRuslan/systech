@@ -2,7 +2,7 @@
 CREATE TABLE myTable(date, docType, id, image, prodName, price, quantity, removed);
 #Вставка данных подзапросом во вспомогательную таблицу
 INSERT INTO myTable(date, docType, id, image, prodName, price, quantity, removed) 
-  SELECT docs.date, docTypes.name, products.id, products.image, products.name, products.price, rows.quantity, products.removed 
+  SELECT docs.date, docTypes.name, docs.id, products.image, products.name, products.price, rows.quantity, products.removed 
   FROM products 
   INNER JOIN rows ON products.id = rows.productId 
   INNER JOIN docs ON rows.docId = docs.id
