@@ -16,10 +16,12 @@ db_array.forEach(function(item){
         // result[d].push(quant);
         result[d] = [item];
     }
-    for (var b in result){
-		result[d].quantityDocs = result[d].length;
-    }
+    result[d].quantityDocs = result[d].length;
 });
+
+// for (var b in result){
+//     result[d].quantityDocs = result[d].length;
+// }
 
 var template = `
 doctype html
@@ -36,6 +38,7 @@ html
                     .item_content!= prop.docType
                     .item_content!= prop.id
                     .item_content!= prop.docPrice
+                    .item_content!= prop.prodName
                 // .docs!= prop.docType
             // .docs-wrap__header
                 // .docs-wrap__date!= val
