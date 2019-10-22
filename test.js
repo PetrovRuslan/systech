@@ -17,6 +17,7 @@ db_array.forEach(function(item){
         result[d] = [item];
     }
     result[d].quantityDocs = result[d].length;
+
 });
 
 // for (var b in result){
@@ -30,6 +31,10 @@ html
         title systech
         link(rel="stylesheet", href="stylesheets.css")
         script(src="parse_hack.js")
+    style.
+        .test {
+            text-align: center;
+        }
     body
         each key, val in db_result
             .docs-wrap!= val
