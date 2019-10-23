@@ -112,15 +112,15 @@ html
             .date!= da
             .doc-wrap
                 each key, val in new_result
-                        .doc
-                            .doctype!= key.docType + \' №\' + val
-                            .item!= \'Товаров:\' + key.itemQuant
-                                each prop in key
-                                    .wrap-item
-                                        img(src=prop.image, alt="").prod-image
-                                        .prod
-                                            .name!= prop.prodName
-                                            .quantity!= prop.quantity + \' * \' + prop.price
+                    .doc
+                        .doctype!= key.docType + \' №\' + val
+                        .item!= \'Товаров:\' + key.itemQuant
+                        .wrap-item
+                            each prop in key
+                                img(src=prop.image, alt="").prod-image
+                                .prod
+                                    .name!= prop.prodName
+                                    .quantity!= prop.quantity + \' * \' + prop.price
 
 script.
     var acc = document.getElementsByClassName("date");
@@ -138,17 +138,17 @@ script.
     });
     }
 script.
-    var acc = document.getElementsByClassName("item");
-    var i;
+    var items = document.getElementsByClassName("item");
+    var t;
 
-    for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
+    for (t = 0; t < items.length; t++) {
+    items[t].addEventListener("click", function() {
         //this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-        panel.style.display = "none";
+        var listOfItems = this.nextElementSibling;
+        if (listOfItems.style.display === "block") {
+        listOfItems.style.display = "none";
         } else {
-        panel.style.display = "block";
+        listOfItems.style.display = "block";
         }
     });
     }
