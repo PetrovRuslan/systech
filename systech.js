@@ -91,6 +91,10 @@ html
                 flex-direction: column;
                 border-bottom: 1px solid #ececec;
             }
+            .itemQuant {
+                display: flex;
+                flex-direction: row;
+            }
             .doc {
                 background-color: #fff; 
                 width: 80%;
@@ -114,7 +118,11 @@ html
             .doc-wrap
                 each skey, sval in fkey
                     .typeDoc!= skey.typeDoc + \' №\' + sval
-                    .itemQuant!= 'Товаров ' + skey.itemQuant
+                    .itemQuant
+                        span
+                            svg(width='12', height='6')
+                                polygon(points='0,1 10,1 5,6', fill='#546e7a')   
+                        span!= 'Товаров ' + skey.itemQuant                 
                     .doc
                         each prop in skey
                             // .typeDoc!= skey.typeDoc
@@ -122,7 +130,7 @@ html
                             .prodName!= prop.prodName
                             .multip!= prop.quantity + \' * \' + prop.price
                             .totalPrice!= prop.quantity * prop.price
-                            
+                                          
 
 script.
     var acc = document.getElementsByClassName("date");
