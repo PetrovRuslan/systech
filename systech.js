@@ -1,69 +1,165 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>systech</title><!-- link(rel="stylesheet", href="stylesheets.css")--><script src="parse_hack.js"></script><!-- script(src="https://cdnjs.cloudflare.com/ajax/libs/umbrella/3.1.0/umbrella.esm.js")--><style>body {
-    background-color: #eee;
-    color: #aaa;
-    width: 60%;
-    margin: 0 auto;
-}
-.date {
-    background-color: #fff; 
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    // margin-bottom: 5px;
-    // box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.doc-wrap {
-    display: none;
-}
-.typeDoc, .doc, .itemQuant {
-    background-color: #fff; 
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #ececec;
-}
-.doc {
-    background-color: #fff; 
-    width: 80%;
-    margin: 0 auto;
-    display: none;
-    flex-direction: column;
-    border-bottom: 1px solid #ececec;
-}
-.wrap-item {
-    display: block;
-    // display: flex;
-}
-.prod-image {
-    width: 50px;
-    height: 50px;
-}
-</style></head><body><div class="date">1 Ноября</div><div class="doc-wrap"><div class="typeDoc">Приход №564564867361360</div><div class="itemQuant">Товаров 2</div><div class="doc"><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://images.ua.prom.st/50389447_w640_h640_ncheskaya_s_grushej_200_g..jpg" alt=""><div class="prodName">Молочный Груша 200</div><div class="multip">96 * 180</div><div class="totalPrice">17280</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3265/3265004H.jpg" alt=""><div class="prodName">Молочный Яблоко 100</div><div class="multip">9 * 25.1</div><div class="totalPrice">225.9</div></div></div><div class="date">3 Ноября</div><div class="doc-wrap"><div class="typeDoc">Приход №564564867361361</div><div class="itemQuant">Товаров 7</div><div class="doc"><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://mariupolcena.com/files/products/9ff44136e6ccb0afb404ad26f727e67d.jpeg" alt=""><div class="prodName">Русская картошка чедар 50</div><div class="multip">62 * 46.3</div><div class="totalPrice">2870.6</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://produkty-online.ru/wa-data/public/shop/products/31/83/18331/images/1359/1359.970.jpg" alt=""><div class="prodName">Молочный Сказка 100</div><div class="multip">67 * 39</div><div class="totalPrice">2613</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3139/3139296H.jpg" alt=""><div class="prodName">Тоник 0,5л</div><div class="multip">51 * 63</div><div class="totalPrice">3213</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.komus.ru/medias/sys_master/root/hd3/h93/9286922043422.jpg" alt=""><div class="prodName">Молочный Изюм 100</div><div class="multip">4 * 102</div><div class="totalPrice">408</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://ecosned.ru/image/cache/catalog/categories/iz_fermerskogo_moloka/tvorog/7/ge-catalog-categories-iz_fermerskogo_moloka-tvorog-tvorozhnaya_massa_s_kuragoy-800x800.jpg" alt=""><div class="prodName">Творог 9% с курагой</div><div class="multip">60 * 121</div><div class="totalPrice">7260</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" alt=""><div class="prodName">Виноград 0,3л</div><div class="multip">61 * 65</div><div class="totalPrice">3965</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://xn--4-8sbu.xn--p1ai/thumb/4KQdJOhw0Uu5AnP0PPIrMQ/200r200/761268/3152.png" alt=""><div class="prodName">Беседа. 50гр</div><div class="multip">41 * 36.5</div><div class="totalPrice">1496.5</div></div><div class="typeDoc">Приход №564564867361362</div><div class="itemQuant">Товаров 8</div><div class="doc"><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.komus.ru/medias/sys_master/root/hd3/h93/9286922043422.jpg" alt=""><div class="prodName">Молочный Изюм 100</div><div class="multip">3 * 102</div><div class="totalPrice">306</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3176/3176192H.jpg" alt=""><div class="prodName">Сыр 125г</div><div class="multip">96 * 131</div><div class="totalPrice">12576</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3139/3139296H.jpg" alt=""><div class="prodName">Тоник 0,5л</div><div class="multip">31 * 63</div><div class="totalPrice">1953</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://www.svoda.ru/site/userfiles/images/%D0%9A%D0%90%D0%9F%D0%9B%D0%AF%20%D0%A0%D0%9E%D0%A1%D0%AB%201.5%D0%9B%20%D0%93%D0%90%D0%97%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%9D%D0%90%D0%AF.jpg" alt=""><div class="prodName">Капля росы негаз 1.5л</div><div class="multip">16 * 16.9</div><div class="totalPrice">270.4</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://www.calorizator.ru/sites/default/files/imagecache/product_512/product/tvorog-prostokvashino-1.jpg" alt=""><div class="prodName">Нежирный творог</div><div class="multip">81 * 52.41</div><div class="totalPrice">4245.21</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://ecosned.ru/image/cache/catalog/categories/iz_fermerskogo_moloka/tvorog/7/ge-catalog-categories-iz_fermerskogo_moloka-tvorog-tvorozhnaya_massa_s_kuragoy-800x800.jpg" alt=""><div class="prodName">Творог 9% с курагой</div><div class="multip">23 * 121</div><div class="totalPrice">2783</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://tashkentcena.com/files/products/893eebe7b69146290886dc504a3328ef.jpeg" alt=""><div class="prodName">Горький коньяк 100</div><div class="multip">52 * 336</div><div class="totalPrice">17472</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3054/3054289H.jpg" alt=""><div class="prodName">Аленка карамель 100г Акционный товар Большая скидка</div><div class="multip">12 * 73.9</div><div class="totalPrice">886.8000000000001</div></div></div><div class="date">29 Ноября</div><div class="doc-wrap"><div class="typeDoc">Приход №564564867361363</div><div class="itemQuant">Товаров 6</div><div class="doc"><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://mariupolcena.com/files/products/9ff44136e6ccb0afb404ad26f727e67d.jpeg" alt=""><div class="prodName">Русская картошка чедар 50</div><div class="multip">6 * 46.3</div><div class="totalPrice">277.79999999999995</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://teremok.sm.ua/wa-data/public/shop/products/82/25/82582/images/35179/35179.750@2x.jpg" alt=""><div class="prodName">Сметана и лук 25г</div><div class="multip">18 * 30</div><div class="totalPrice">540</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://xn--4-8sbu.xn--p1ai/thumb/4KQdJOhw0Uu5AnP0PPIrMQ/200r200/761268/3152.png" alt=""><div class="prodName">Беседа. 50гр</div><div class="multip">99 * 36.5</div><div class="totalPrice">3613.5</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://tashkentcena.com/files/products/893eebe7b69146290886dc504a3328ef.jpeg" alt=""><div class="prodName">Горький коньяк 100</div><div class="multip">94 * 336</div><div class="totalPrice">31584</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3176/3176192H.jpg" alt=""><div class="prodName">Сыр 125г</div><div class="multip">64 * 131</div><div class="totalPrice">8384</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3265/3265004H.jpg" alt=""><div class="prodName">Молочный Яблоко 100</div><div class="multip">52 * 25.1</div><div class="totalPrice">1305.2</div></div><div class="typeDoc">Расход №564564867361364</div><div class="itemQuant">Товаров 1</div><div class="doc"><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/299388/Ydfgl76IXe0nEM2gO6Ww.JPG" alt=""><div class="prodName">Молочный Традиция 100</div><div class="multip">64 * 115</div><div class="totalPrice">7360</div></div><div class="typeDoc">Приход №564564867361365</div><div class="itemQuant">Товаров 7</div><div class="doc"><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://mariupolcena.com/files/products/9ff44136e6ccb0afb404ad26f727e67d.jpeg" alt=""><div class="prodName">Русская картошка чедар 50</div><div class="multip">3 * 46.3</div><div class="totalPrice">138.89999999999998</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" alt=""><div class="prodName">Виноград 0,3л</div><div class="multip">88 * 65</div><div class="totalPrice">5720</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://www.calorizator.ru/sites/default/files/imagecache/product_512/product/tvorog-prostokvashino-1.jpg" alt=""><div class="prodName">Нежирный творог</div><div class="multip">20 * 52.41</div><div class="totalPrice">1048.1999999999998</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3139/3139296H.jpg" alt=""><div class="prodName">Тоник 0,5л</div><div class="multip">64 * 63</div><div class="totalPrice">4032</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://produkty-online.ru/wa-data/public/shop/products/31/83/18331/images/1359/1359.970.jpg" alt=""><div class="prodName">Молочный Сказка 100</div><div class="multip">54 * 39</div><div class="totalPrice">2106</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://teremok.sm.ua/wa-data/public/shop/products/82/25/82582/images/35179/35179.750@2x.jpg" alt=""><div class="prodName">Сметана и лук 25г</div><div class="multip">33 * 30</div><div class="totalPrice">990</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://xn--4-8sbu.xn--p1ai/thumb/4KQdJOhw0Uu5AnP0PPIrMQ/200r200/761268/3152.png" alt=""><div class="prodName">Беседа. 50гр</div><div class="multip">6 * 36.5</div><div class="totalPrice">219</div></div></div><div class="date">16 Октября</div><div class="doc-wrap"><div class="typeDoc">Расход №564564867361367</div><div class="itemQuant">Товаров 8</div><div class="doc"><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://ecosned.ru/image/cache/catalog/categories/iz_fermerskogo_moloka/tvorog/7/ge-catalog-categories-iz_fermerskogo_moloka-tvorog-tvorozhnaya_massa_s_kuragoy-800x800.jpg" alt=""><div class="prodName">Творог 9% с курагой</div><div class="multip">45 * 121</div><div class="totalPrice">5445</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3265/3265004H.jpg" alt=""><div class="prodName">Молочный Яблоко 100</div><div class="multip">44 * 25.1</div><div class="totalPrice">1104.4</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/299388/Ydfgl76IXe0nEM2gO6Ww.JPG" alt=""><div class="prodName">Молочный Традиция 100</div><div class="multip">62 * 115</div><div class="totalPrice">7130</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" alt=""><div class="prodName">Виноград 0,3л</div><div class="multip">87 * 65</div><div class="totalPrice">5655</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://mariupolcena.com/files/products/9ff44136e6ccb0afb404ad26f727e67d.jpeg" alt=""><div class="prodName">Русская картошка чедар 50</div><div class="multip">86 * 46.3</div><div class="totalPrice">3981.7999999999997</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://images.ua.prom.st/50389447_w640_h640_ncheskaya_s_grushej_200_g..jpg" alt=""><div class="prodName">Молочный Груша 200</div><div class="multip">80 * 180</div><div class="totalPrice">14400</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3054/3054289H.jpg" alt=""><div class="prodName">Аленка карамель 100г Акционный товар Большая скидка</div><div class="multip">94 * 73.9</div><div class="totalPrice">6946.6</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3176/3176192H.jpg" alt=""><div class="prodName">Сыр 125г</div><div class="multip">83 * 131</div><div class="totalPrice">10873</div></div><div class="typeDoc">Расчет №564564867361368</div><div class="itemQuant">Товаров 5</div><div class="doc"><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://карапузик.com.images.1c-bitrix-cdn.ru/upload/iblock/b28/b28f089d41db757b74cfebfe21609228.jpg" alt=""><div class="prodName">Яблоко-Виноград 0,5л</div><div class="multip">20 * 44</div><div class="totalPrice">880</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://images.ua.prom.st/50389447_w640_h640_ncheskaya_s_grushej_200_g..jpg" alt=""><div class="prodName">Молочный Груша 200</div><div class="multip">65 * 180</div><div class="totalPrice">11700</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://ecosned.ru/image/cache/catalog/categories/iz_fermerskogo_moloka/tvorog/7/ge-catalog-categories-iz_fermerskogo_moloka-tvorog-tvorozhnaya_massa_s_kuragoy-800x800.jpg" alt=""><div class="prodName">Творог 9% с курагой</div><div class="multip">41 * 121</div><div class="totalPrice">4961</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.komus.ru/medias/sys_master/root/hd3/h93/9286922043422.jpg" alt=""><div class="prodName">Молочный Изюм 100</div><div class="multip">72 * 102</div><div class="totalPrice">7344</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" alt=""><div class="prodName">Виноград 0,3л</div><div class="multip">39 * 65</div><div class="totalPrice">2535</div></div><div class="typeDoc">Приход №564564867361369</div><div class="itemQuant">Товаров 4</div><div class="doc"><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="http://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/299388/Ydfgl76IXe0nEM2gO6Ww.JPG" alt=""><div class="prodName">Молочный Традиция 100</div><div class="multip">60 * 115</div><div class="totalPrice">6900</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3054/3054289H.jpg" alt=""><div class="prodName">Аленка карамель 100г Акционный товар Большая скидка</div><div class="multip">99 * 73.9</div><div class="totalPrice">7316.1</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://mariupolcena.com/files/products/9ff44136e6ccb0afb404ad26f727e67d.jpeg" alt=""><div class="prodName">Русская картошка чедар 50</div><div class="multip">51 * 46.3</div><div class="totalPrice">2361.2999999999997</div><!-- .typeDoc!= skey.typeDoc--><img class="prod-image" src="https://www.utkonos.ru/images/photo/3117/3117496H.jpg" alt=""><div class="prodName">Русская картошка икра 50</div><div class="multip">15 * 33.1</div><div class="totalPrice">496.5</div></div></div></body></html><script>var acc = document.getElementsByClassName("date");
-var i;
+var pug = require('pug');
 
-for (i = 0; i < acc.length; i++) {
-acc[i].addEventListener("click", function() {
-    //this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-    panel.style.display = "none";
+var db_array = [{"date":"2017-11-01 12:09:03","docType":"Приход","id":564564867361360,"image":"https://images.ua.prom.st/50389447_w640_h640_ncheskaya_s_grushej_200_g..jpg","price":180,"prodName":"Молочный Груша 200","quantity":96,"removed":0},{"date":"2017-11-01 12:09:03","docType":"Приход","id":564564867361360,"image":"https://www.utkonos.ru/images/photo/3265/3265004H.jpg","price":25.1,"prodName":"Молочный Яблоко 100","quantity":9,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361361,"image":"https://mariupolcena.com/files/products/9ff44136e6ccb0afb404ad26f727e67d.jpeg","price":46.3,"prodName":"Русская картошка чедар 50","quantity":62,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361361,"image":"http://produkty-online.ru/wa-data/public/shop/products/31/83/18331/images/1359/1359.970.jpg","price":39,"prodName":"Молочный Сказка 100","quantity":67,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361361,"image":"https://www.utkonos.ru/images/photo/3139/3139296H.jpg","price":63,"prodName":"Тоник 0,5л","quantity":51,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361361,"image":"https://www.komus.ru/medias/sys_master/root/hd3/h93/9286922043422.jpg","price":102,"prodName":"Молочный Изюм 100","quantity":4,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361361,"image":"http://ecosned.ru/image/cache/catalog/categories/iz_fermerskogo_moloka/tvorog/7/ge-catalog-categories-iz_fermerskogo_moloka-tvorog-tvorozhnaya_massa_s_kuragoy-800x800.jpg","price":121,"prodName":"Творог 9% с курагой","quantity":60,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361361,"image":null,"price":65,"prodName":"Виноград 0,3л","quantity":61,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361361,"image":"http://xn--4-8sbu.xn--p1ai/thumb/4KQdJOhw0Uu5AnP0PPIrMQ/200r200/761268/3152.png","price":36.5,"prodName":"Беседа. 50гр","quantity":41,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361362,"image":"https://www.komus.ru/medias/sys_master/root/hd3/h93/9286922043422.jpg","price":102,"prodName":"Молочный Изюм 100","quantity":3,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361362,"image":"https://www.utkonos.ru/images/photo/3176/3176192H.jpg","price":131,"prodName":"Сыр 125г","quantity":96,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361362,"image":"https://www.utkonos.ru/images/photo/3139/3139296H.jpg","price":63,"prodName":"Тоник 0,5л","quantity":31,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361362,"image":"http://www.svoda.ru/site/userfiles/images/%D0%9A%D0%90%D0%9F%D0%9B%D0%AF%20%D0%A0%D0%9E%D0%A1%D0%AB%201.5%D0%9B%20%D0%93%D0%90%D0%97%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%9D%D0%90%D0%AF.jpg","price":16.9,"prodName":"Капля росы негаз 1.5л","quantity":16,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361362,"image":"http://www.calorizator.ru/sites/default/files/imagecache/product_512/product/tvorog-prostokvashino-1.jpg","price":52.41,"prodName":"Нежирный творог","quantity":81,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361362,"image":"http://ecosned.ru/image/cache/catalog/categories/iz_fermerskogo_moloka/tvorog/7/ge-catalog-categories-iz_fermerskogo_moloka-tvorog-tvorozhnaya_massa_s_kuragoy-800x800.jpg","price":121,"prodName":"Творог 9% с курагой","quantity":23,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361362,"image":"https://tashkentcena.com/files/products/893eebe7b69146290886dc504a3328ef.jpeg","price":336,"prodName":"Горький коньяк 100","quantity":52,"removed":0},{"date":"2017-11-03 13:11:06","docType":"Приход","id":564564867361362,"image":"https://www.utkonos.ru/images/photo/3054/3054289H.jpg","price":73.9,"prodName":"Аленка карамель 100г Акционный товар Большая скидка","quantity":12,"removed":0},{"date":"2017-11-29 19:31:03","docType":"Приход","id":564564867361363,"image":"https://mariupolcena.com/files/products/9ff44136e6ccb0afb404ad26f727e67d.jpeg","price":46.3,"prodName":"Русская картошка чедар 50","quantity":6,"removed":0},{"date":"2017-11-29 19:31:03","docType":"Приход","id":564564867361363,"image":"https://teremok.sm.ua/wa-data/public/shop/products/82/25/82582/images/35179/35179.750@2x.jpg","price":30,"prodName":"Сметана и лук 25г","quantity":18,"removed":0},{"date":"2017-11-29 19:31:03","docType":"Приход","id":564564867361363,"image":"http://xn--4-8sbu.xn--p1ai/thumb/4KQdJOhw0Uu5AnP0PPIrMQ/200r200/761268/3152.png","price":36.5,"prodName":"Беседа. 50гр","quantity":99,"removed":0},{"date":"2017-11-29 19:31:03","docType":"Приход","id":564564867361363,"image":"https://tashkentcena.com/files/products/893eebe7b69146290886dc504a3328ef.jpeg","price":336,"prodName":"Горький коньяк 100","quantity":94,"removed":0},{"date":"2017-11-29 19:31:03","docType":"Приход","id":564564867361363,"image":"https://www.utkonos.ru/images/photo/3176/3176192H.jpg","price":131,"prodName":"Сыр 125г","quantity":64,"removed":0},{"date":"2017-11-29 19:31:03","docType":"Приход","id":564564867361363,"image":"https://www.utkonos.ru/images/photo/3265/3265004H.jpg","price":25.1,"prodName":"Молочный Яблоко 100","quantity":52,"removed":0},{"date":"2017-11-29 18:29:00","docType":"Расход","id":564564867361364,"image":"http://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/299388/Ydfgl76IXe0nEM2gO6Ww.JPG","price":115,"prodName":"Молочный Традиция 100","quantity":64,"removed":0},{"date":"2017-11-29 17:26:57","docType":"Приход","id":564564867361365,"image":"https://mariupolcena.com/files/products/9ff44136e6ccb0afb404ad26f727e67d.jpeg","price":46.3,"prodName":"Русская картошка чедар 50","quantity":3,"removed":0},{"date":"2017-11-29 17:26:57","docType":"Приход","id":564564867361365,"image":null,"price":65,"prodName":"Виноград 0,3л","quantity":88,"removed":0},{"date":"2017-11-29 17:26:57","docType":"Приход","id":564564867361365,"image":"http://www.calorizator.ru/sites/default/files/imagecache/product_512/product/tvorog-prostokvashino-1.jpg","price":52.41,"prodName":"Нежирный творог","quantity":20,"removed":0},{"date":"2017-11-29 17:26:57","docType":"Приход","id":564564867361365,"image":"https://www.utkonos.ru/images/photo/3139/3139296H.jpg","price":63,"prodName":"Тоник 0,5л","quantity":64,"removed":0},{"date":"2017-11-29 17:26:57","docType":"Приход","id":564564867361365,"image":"http://produkty-online.ru/wa-data/public/shop/products/31/83/18331/images/1359/1359.970.jpg","price":39,"prodName":"Молочный Сказка 100","quantity":54,"removed":0},{"date":"2017-11-29 17:26:57","docType":"Приход","id":564564867361365,"image":"https://teremok.sm.ua/wa-data/public/shop/products/82/25/82582/images/35179/35179.750@2x.jpg","price":30,"prodName":"Сметана и лук 25г","quantity":33,"removed":0},{"date":"2017-11-29 17:26:57","docType":"Приход","id":564564867361365,"image":"http://xn--4-8sbu.xn--p1ai/thumb/4KQdJOhw0Uu5AnP0PPIrMQ/200r200/761268/3152.png","price":36.5,"prodName":"Беседа. 50гр","quantity":6,"removed":0},{"date":"2017-10-16 12:07:07","docType":"Расход","id":564564867361367,"image":"http://ecosned.ru/image/cache/catalog/categories/iz_fermerskogo_moloka/tvorog/7/ge-catalog-categories-iz_fermerskogo_moloka-tvorog-tvorozhnaya_massa_s_kuragoy-800x800.jpg","price":121,"prodName":"Творог 9% с курагой","quantity":45,"removed":0},{"date":"2017-10-16 12:07:07","docType":"Расход","id":564564867361367,"image":"https://www.utkonos.ru/images/photo/3265/3265004H.jpg","price":25.1,"prodName":"Молочный Яблоко 100","quantity":44,"removed":0},{"date":"2017-10-16 12:07:07","docType":"Расход","id":564564867361367,"image":"http://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/299388/Ydfgl76IXe0nEM2gO6Ww.JPG","price":115,"prodName":"Молочный Традиция 100","quantity":62,"removed":0},{"date":"2017-10-16 12:07:07","docType":"Расход","id":564564867361367,"image":null,"price":65,"prodName":"Виноград 0,3л","quantity":87,"removed":0},{"date":"2017-10-16 12:07:07","docType":"Расход","id":564564867361367,"image":"https://mariupolcena.com/files/products/9ff44136e6ccb0afb404ad26f727e67d.jpeg","price":46.3,"prodName":"Русская картошка чедар 50","quantity":86,"removed":0},{"date":"2017-10-16 12:07:07","docType":"Расход","id":564564867361367,"image":"https://images.ua.prom.st/50389447_w640_h640_ncheskaya_s_grushej_200_g..jpg","price":180,"prodName":"Молочный Груша 200","quantity":80,"removed":0},{"date":"2017-10-16 12:07:07","docType":"Расход","id":564564867361367,"image":"https://www.utkonos.ru/images/photo/3054/3054289H.jpg","price":73.9,"prodName":"Аленка карамель 100г Акционный товар Большая скидка","quantity":94,"removed":0},{"date":"2017-10-16 12:07:07","docType":"Расход","id":564564867361367,"image":"https://www.utkonos.ru/images/photo/3176/3176192H.jpg","price":131,"prodName":"Сыр 125г","quantity":83,"removed":0},{"date":"2017-10-16 15:09:08","docType":"Расчет","id":564564867361368,"image":"http://карапузик.com.images.1c-bitrix-cdn.ru/upload/iblock/b28/b28f089d41db757b74cfebfe21609228.jpg","price":44,"prodName":"Яблоко-Виноград 0,5л","quantity":20,"removed":0},{"date":"2017-10-16 15:09:08","docType":"Расчет","id":564564867361368,"image":"https://images.ua.prom.st/50389447_w640_h640_ncheskaya_s_grushej_200_g..jpg","price":180,"prodName":"Молочный Груша 200","quantity":65,"removed":0},{"date":"2017-10-16 15:09:08","docType":"Расчет","id":564564867361368,"image":"http://ecosned.ru/image/cache/catalog/categories/iz_fermerskogo_moloka/tvorog/7/ge-catalog-categories-iz_fermerskogo_moloka-tvorog-tvorozhnaya_massa_s_kuragoy-800x800.jpg","price":121,"prodName":"Творог 9% с курагой","quantity":41,"removed":0},{"date":"2017-10-16 15:09:08","docType":"Расчет","id":564564867361368,"image":"https://www.komus.ru/medias/sys_master/root/hd3/h93/9286922043422.jpg","price":102,"prodName":"Молочный Изюм 100","quantity":72,"removed":0},{"date":"2017-10-16 15:09:08","docType":"Расчет","id":564564867361368,"image":null,"price":65,"prodName":"Виноград 0,3л","quantity":39,"removed":0},{"date":"2017-10-16 18:11:09","docType":"Приход","id":564564867361369,"image":"http://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/299388/Ydfgl76IXe0nEM2gO6Ww.JPG","price":115,"prodName":"Молочный Традиция 100","quantity":60,"removed":0},{"date":"2017-10-16 18:11:09","docType":"Приход","id":564564867361369,"image":"https://www.utkonos.ru/images/photo/3054/3054289H.jpg","price":73.9,"prodName":"Аленка карамель 100г Акционный товар Большая скидка","quantity":99,"removed":0},{"date":"2017-10-16 18:11:09","docType":"Приход","id":564564867361369,"image":"https://mariupolcena.com/files/products/9ff44136e6ccb0afb404ad26f727e67d.jpeg","price":46.3,"prodName":"Русская картошка чедар 50","quantity":51,"removed":0},{"date":"2017-10-16 18:11:09","docType":"Приход","id":564564867361369,"image":"https://www.utkonos.ru/images/photo/3117/3117496H.jpg","price":33.1,"prodName":"Русская картошка икра 50","quantity":15,"removed":0}]
+
+
+function getFormatedDate(dateStr){
+    var month = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
+    var date = new Date(dateStr);
+    return date.getDate() + ' ' + month[date.getMonth()];}
+
+var result = {};
+db_array.forEach(function(item){
+    var d = getFormatedDate(item.date);
+    if(result[d]){
+        result[d].push(item);
     } else {
-    panel.style.display = "block";
+        result[d] = [item];
     }
 });
-}</script><script>var items = document.getElementsByClassName("itemQuant");
-var t;
+    
+var js_result = {};
 
-for (t = 0; t < items.length; t++) {
-items[t].addEventListener("click", function() {
-    //this.classList.toggle("active");
-    var listOfItems = this.nextElementSibling;
-    if (listOfItems.style.display === "block") {
-    listOfItems.style.display = "none";
-    } else {
-    listOfItems.style.display = "block";
+var x = 0;
+var y = 0;
+for (var item in result){
+    // console.log(item);
+    js_result[item] = {};
+    for (var prop in result[item]){
+        // console.log(result[item][x]);
+        // console.log(result[item][x].id);
+        var v = result[item][y].id;
+        if (js_result[item][v]){
+            // console.log(js_result[item][v]);
+            js_result[item][v].push(result[item][y]);
+            js_result[item][v]['itemQuant'] = js_result[item][v].length;
+            // console.log(js_result[item][v][x].price);
+            // console.log(js_result[item][v][x].quantity);
+            js_result[item][v]['totalDocPrice'] = js_result[item][v][x].price * js_result[item][v][x].quantity;
+            x++;
+        }else{
+            js_result[item][v] = [result[item][y]];
+            js_result[item][v]['typeDoc'] = result[item][y].docType;
+            js_result[item][v]['itemQuant'] = js_result[item][v].length;
+            // console.log(js_result[item][v][x].price);
+            // console.log(js_result[item][v][x].quantity);
+            js_result[item][v]['totalDocPrice'] = js_result[item][v][x].price * js_result[item][v][x].quantity;
+            x++;
+        }
+        // js_result[item]['checkQuant'] = [js_result[item]].length;
+        x = 0;
+        y++;
     }
+    // js_result[item]['checkQuant'] = y;
+    y = 0;
+}
+
+var template = `
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title systech
+        // link(rel="stylesheet", href="stylesheets.css")
+        script(src="parse_hack.js")
+        // script(src="https://cdnjs.cloudflare.com/ajax/libs/umbrella/3.1.0/umbrella.esm.js")
+        style.
+            body {
+                background-color: #eee;
+                color: #aaa;
+                width: 60%;
+                margin: 0 auto;
+            }
+            .date {
+                background-color: #fff; 
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                // margin-bottom: 5px;
+                // box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+            .doc-wrap {
+                display: none;
+            }
+            .typeDoc, .doc, .itemQuant {
+                background-color: #fff; 
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #ececec;
+            }
+            .doc {
+                background-color: #fff; 
+                width: 80%;
+                margin: 0 auto;
+                display: none;
+                flex-direction: column;
+                border-bottom: 1px solid #ececec;
+            }
+            .wrap-item {
+                display: block;
+                // display: flex;
+            }
+            .prod-image {
+                width: 50px;
+                height: 50px;
+            }
+
+    body
+        each fkey, fval in new_result
+            .date!= fval
+            .doc-wrap
+                each skey, sval in fkey
+                    .typeDoc!= skey.typeDoc + \' №\' + sval
+                    .itemQuant!= 'Товаров ' + skey.itemQuant
+                    .doc
+                        each prop in skey
+                            // .typeDoc!= skey.typeDoc
+                            img(src=prop.image, alt="").prod-image
+                            .prodName!= prop.prodName
+                            .multip!= prop.quantity + \' * \' + prop.price
+                            .totalPrice!= prop.quantity * prop.price
+                            
+
+script.
+    var acc = document.getElementsByClassName("date");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        //this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+script.
+    var items = document.getElementsByClassName("itemQuant");
+    var t;
+
+    for (t = 0; t < items.length; t++) {
+    items[t].addEventListener("click", function() {
+        //this.classList.toggle("active");
+        var listOfItems = this.nextElementSibling;
+        if (listOfItems.style.display === "block") {
+        listOfItems.style.display = "none";
+        } else {
+        listOfItems.style.display = "block";
+        }
+    });
+    }
+`;
+
+var html = pug.render(template, {
+    db_pug: db_array,
+    db_result: result,
+    new_result: js_result,
 });
-}</script>
+
+console.log(html);
