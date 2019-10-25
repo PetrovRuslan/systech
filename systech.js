@@ -17,9 +17,14 @@ db_array.forEach(function(item){
         result[d] = [item];
     }
 });
-    
+
+var rounded = function(number){
+    return +number.toFixed(2);
+}
+
 var js_result = {};
 
+var summ = 0;
 var x = 0;
 var y = 0;
 for (var item in result){
@@ -33,20 +38,26 @@ for (var item in result){
             // console.log(js_result[item][v]);
             js_result[item][v].push(result[item][y]);
             js_result[item][v]['itemQuant'] = js_result[item][v].length;
+            summ += result[item][y].price * result[item][y].quantity;
             // console.log(js_result[item][v][x].price);
             // console.log(js_result[item][v][x].quantity);
-            js_result[item][v]['totalDocPrice'] = js_result[item][v][x].price * js_result[item][v][x].quantity;
+            // js_result[item][v]['totalDocPrice'] += js_result[item][v][x].price * js_result[item][v][x].quantity;
+            js_result[item][v]['totalDocPrice'] += js_result[item][v][x].price * js_result[item][v][x].quantity;
             x++;
         }else{
             js_result[item][v] = [result[item][y]];
             js_result[item][v]['typeDoc'] = result[item][y].docType;
             js_result[item][v]['itemQuant'] = js_result[item][v].length;
+            summ += result[item][y].price * result[item][y].quantity;
             // console.log(js_result[item][v][x].price);
             // console.log(js_result[item][v][x].quantity);
+            // js_result[item][v]['totalDocPrice'] = 0;
+            // js_result[item][v]['totalDocPrice'] += js_result[item][v][x].price * js_result[item][v][x].quantity;
             js_result[item][v]['totalDocPrice'] = js_result[item][v][x].price * js_result[item][v][x].quantity;
             x++;
         }
         // js_result[item]['checkQuant'] = [js_result[item]].length;
+        js_result[item][v]['summDoc'] = rounded(summ);
         x = 0;
         y++;
     }
@@ -75,8 +86,9 @@ html
                 background-color: #fff; 
                 width: 80%;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 margin: 0 auto;
+                cursor: pointer;
                 // margin-bottom: 5px;
                 // box-shadow: 0 0 10px rgba(0,0,0,0.5);
             }
@@ -94,6 +106,7 @@ html
             .itemQuant {
                 display: flex;
                 flex-direction: row;
+                cursor: pointer;
             }
             .doc {
                 background-color: #fff; 
@@ -114,7 +127,10 @@ html
 
     body
         each fkey, fval in new_result
-            .date!= fval
+            .date
+                svg#Layer_1(width='12', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 407.437 407.437', style='enable-background:new 0 0 407.437 407.437;', xml:space='preserve')
+                    polygon(points='386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815', fill='#546e7a')
+                .day!= fval
             .doc-wrap
                 each skey, sval in fkey
                     .typeDoc!= skey.typeDoc + \' №\' + sval
@@ -122,7 +138,7 @@ html
                         span
                             svg(width='12', height='6')
                                 polygon(points='0,1 10,1 5,6', fill='#546e7a')   
-                        span!= 'Товаров ' + skey.itemQuant                 
+                        span!= 'Товаров ' + skey.itemQuant + ' ' + skey.summDoc                 
                     .doc
                         each prop in skey
                             // .typeDoc!= skey.typeDoc
