@@ -33,36 +33,32 @@ for (var item in result){
     for (var prop in result[item]){
         // console.log(result[item][x]);
         // console.log(result[item][x].id);
-        var v = result[item][y].id;
+        var v = result[item][prop].id;
         if (js_result[item][v]){
             // console.log(js_result[item][v]);
-            js_result[item][v].push(result[item][y]);
+            js_result[item][v].push(result[item][prop]);
             js_result[item][v]['itemQuant'] = js_result[item][v].length;
-            summ += result[item][y].price * result[item][y].quantity;
-            // console.log(js_result[item][v][x].price);
-            // console.log(js_result[item][v][x].quantity);
+            summ += result[item][prop].price * result[item][prop].quantity;
             // js_result[item][v]['totalDocPrice'] += js_result[item][v][x].price * js_result[item][v][x].quantity;
-            js_result[item][v]['totalDocPrice'] += js_result[item][v][x].price * js_result[item][v][x].quantity;
             x++;
         }else{
-            js_result[item][v] = [result[item][y]];
-            js_result[item][v]['typeDoc'] = result[item][y].docType;
+            js_result[item][v] = [result[item][prop]];
+            js_result[item][v]['typeDoc'] = result[item][prop].docType;
             js_result[item][v]['itemQuant'] = js_result[item][v].length;
-            summ += result[item][y].price * result[item][y].quantity;
-            // console.log(js_result[item][v][x].price);
-            // console.log(js_result[item][v][x].quantity);
-            // js_result[item][v]['totalDocPrice'] = 0;
-            // js_result[item][v]['totalDocPrice'] += js_result[item][v][x].price * js_result[item][v][x].quantity;
-            js_result[item][v]['totalDocPrice'] = js_result[item][v][x].price * js_result[item][v][x].quantity;
+            summ += result[item][prop].price * result[item][prop].quantity;
+            // js_result[item[v][]]
+            // js_result[item][v]['totalDocPrice'] = js_result[item][v][x].price * js_result[item][v][x].quantity;
             x++;
         }
-        // js_result[item]['checkQuant'] = [js_result[item]].length;
-        js_result[item][v]['summDoc'] = rounded(summ);
+        // js_result[item]['summDoc'] = rounded(summ);
+        // summ = 0;
         x = 0;
-        y++;
+        // y++;
     }
+    // js_result[item]['summDoc'] = rounded(summ);
     // js_result[item]['checkQuant'] = y;
-    y = 0;
+    summ = 0;
+    // y = 0;
 }
 
 var template = `
@@ -138,7 +134,7 @@ html
                         span
                             svg(width='12', height='6')
                                 polygon(points='0,1 10,1 5,6', fill='#546e7a')   
-                        span!= 'Товаров ' + skey.itemQuant + ' ' + skey.summDoc                 
+                        span!= 'Товаров ' + skey.itemQuant              
                     .doc
                         each prop in skey
                             // .typeDoc!= skey.typeDoc
