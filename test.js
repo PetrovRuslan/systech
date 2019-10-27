@@ -121,6 +121,7 @@ html
                                 .prod
                                     .name!= prop.prodName
                                     .quantity!= prop.quantity + \' * \' + prop.price
+                                    .test-multiplication!= prop.quantity * prop.price
 
 script.
     var acc = document.getElementsByClassName("date");
