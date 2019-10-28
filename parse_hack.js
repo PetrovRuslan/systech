@@ -22,13 +22,15 @@ var rounded = function(number){
 
 var js_result = {};
 
+var id_st = '';
 var summ = 0;
+var sum = 0;
 var x = 0;
 var y = 0;
 for (var item in result){
     // console.log(item);
     js_result[item] = {};
-    for (var prop in result[item]){
+    for (var prop in result[item]){        
         // console.log(result[item][x]);
         // console.log(result[item][x].id);
         var v = result[item][prop].id;
@@ -37,26 +39,40 @@ for (var item in result){
             js_result[item][v].push(result[item][prop]);
             js_result[item][v]['itemQuant'] = js_result[item][v].length;
             summ += result[item][prop].price * result[item][prop].quantity;
+            sum += result[item][prop].price * result[item][prop].quantity;
+            js_result[item][v]['sumDoc'] = rounded(sum);
+            console.log('Добавление ' + sum);
+            // js_result[item][v]['sumDoc'] = rounded(sum);
+            // sum = 0;
             // js_result[item][v]['totalDocPrice'] += js_result[item][v][x].price * js_result[item][v][x].quantity;
             x++;
         }else{
+            sum = 0;
             js_result[item][v] = [result[item][prop]];
             js_result[item][v]['typeDoc'] = result[item][prop].docType;
             js_result[item][v]['itemQuant'] = js_result[item][v].length;
             summ += result[item][prop].price * result[item][prop].quantity;
+            sum += result[item][prop].price * result[item][prop].quantity;
+            js_result[item][v]['sumDoc'] = rounded(sum);
+            console.log('Создание ' + sum);
+            // sum = 0;
             // js_result[item[v][]]
             // js_result[item][v]['totalDocPrice'] = js_result[item][v][x].price * js_result[item][v][x].quantity;
             x++;
         }
+        // js_result[item][v]['sumDoc'] = rounded(sum);
         // js_result[item]['summDoc'] = rounded(summ);
         // summ = 0;
+        console.log('Перед обнулением ' + sum);
+        // sum = 0;
         x = 0;
-        // y++;
+        y++;
     }
     js_result[item]['summDoc'] = rounded(summ);
+    // console.log(js_result[item]['dayQuant'] = Object.keys(js_result[item]).length - 1);
     // js_result[item]['checkQuant'] = y;
     summ = 0;
-    // y = 0;
+    y = 0;
 }
 
 

@@ -39,26 +39,33 @@ for (var item in result){
             js_result[item][v].push(result[item][prop]);
             js_result[item][v]['itemQuant'] = js_result[item][v].length;
             summ += result[item][prop].price * result[item][prop].quantity;
+            sum += result[item][prop].price * result[item][prop].quantity;
+            js_result[item][v]['sumDoc'] = rounded(sum);
             // js_result[item][v]['totalDocPrice'] += js_result[item][v][x].price * js_result[item][v][x].quantity;
             x++;
         }else{
+            sum = 0;
             js_result[item][v] = [result[item][prop]];
             js_result[item][v]['typeDoc'] = result[item][prop].docType;
             js_result[item][v]['itemQuant'] = js_result[item][v].length;
             summ += result[item][prop].price * result[item][prop].quantity;
+            sum += result[item][prop].price * result[item][prop].quantity;
+            js_result[item][v]['sumDoc'] = rounded(sum);
+            // y++;
             // js_result[item[v][]]
             // js_result[item][v]['totalDocPrice'] = js_result[item][v][x].price * js_result[item][v][x].quantity;
             x++;
         }
+        // js_result[item][v]['summDoc'] = rounded(summ);
         // js_result[item]['summDoc'] = rounded(summ);
         // summ = 0;
         x = 0;
-        // y++;
     }
-    // js_result[item]['summDoc'] = rounded(summ);
+    js_result[item]['summDoc'] = rounded(summ);
+    js_result[item]['dayQuant'] = Object.keys(js_result[item]).length - 1;
     // js_result[item]['checkQuant'] = y;
     summ = 0;
-    // y = 0;
+    y = 0;
 }
 
 var template = `
@@ -126,22 +133,23 @@ html
             .date
                 svg#Layer_1(width='12', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 407.437 407.437', style='enable-background:new 0 0 407.437 407.437;', xml:space='preserve')
                     polygon(points='386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815', fill='#546e7a')
-                .day!= fval
+                .day!= fval + ' Документов: ' + fkey.dayQuant + ' (' + fkey.summDoc + ')'
             .doc-wrap
                 each skey, sval in fkey
-                    .typeDoc!= skey.typeDoc + \' №\' + sval
-                    .itemQuant
-                        span
-                            svg(width='12', height='6')
-                                polygon(points='0,1 10,1 5,6', fill='#546e7a')   
-                        span!= 'Товаров ' + skey.itemQuant              
-                    .doc
-                        each prop in skey
-                            // .typeDoc!= skey.typeDoc
-                            img(src=prop.image, alt="").prod-image
-                            .prodName!= prop.prodName
-                            .multip!= prop.quantity + \' * \' + prop.price
-                            .totalPrice!= prop.quantity * prop.price
+                    if (sval!=='summDoc' && sval!=='dayQuant')
+                        .typeDoc!= skey.typeDoc + \' №\' + sval + ' ' + skey.sumDoc
+                        .itemQuant
+                            span
+                                svg(width='12', height='6')
+                                    polygon(points='0,1 10,1 5,6', fill='#546e7a')   
+                            span!= 'Товаров ' + skey.itemQuant              
+                        .doc
+                            each prop in skey
+                                // .typeDoc!= skey.typeDoc
+                                img(src=prop.image, alt="").prod-image
+                                .prodName!= prop.prodName
+                                .multip!= prop.quantity + \' * \' + prop.price
+                                .totalPrice!= prop.quantity * prop.price
                                           
 
 script.
