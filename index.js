@@ -89,47 +89,65 @@ html
                 width: 60%;
                 margin: 0 auto;
             }
+            @media (max-width: 600px){
+                .container {
+                    width: 100%;
+                }
+            }
             .dayOfDoc {
-                padding-top: 15px;
+                // padding-top: 15px;
+                // padding-bottom: 15px;
                 -webkit-box-shadow: 0px 3px 5px -1px rgba(194,194,194);
                 -moz-box-shadow: 0px 3px 5px -1px rgba(194,194,194);
                 box-shadow: 0px 3px 5px -1px rgba(194,194,194);
             }
             .dayOfDoc__bodyItem {
-                padding-top: 25px;
-                padding-left: 15px;
+                // padding-top: 25px;
+                padding-top: 15px;
+                padding-left: 35px;
                 padding-right: 35px;
+                padding-bottom: 15px;
                 border-bottom: 1px solid #ececec;
             }
             .dayOfDoc__mainHeader {
                 display: flex;
                 justify-content: space-between;
-                cursor: pointer
+                cursor: pointer;
+                padding: 15px 12px 15px;
+            }
+            .mainHeader__count {
+                font-size: 18px;
             }
             .bodyItem__subHeader {
                 display: flex;
                 justify-content: space-between;
             }
             .mainHeader__date {
-                font-size: 16px;
+                font-size: 18px;
             }
             .bodyItem__item {
                 display: flex;
+                align-items: center;
             }
             .bodyItem__list {
-                padding-top: 15px;
+                // padding-top: 15px;
                 cursor: pointer;
             }
             .item__image {
-                margin: 20px 30px 0 0;
-                width: 54px;
+                // margin: 20px 30px 0 0;
+                // width: 100%;
+                height: auto;
                 align-self: flex-start;
+                max-height: 54px;
+                max-width: 54px;
             }
             .item__text {
                 flex: 1 1 auto;
             }
             .item__total {
                 align-self: flex-end;
+                font-size: 18px;
+                color: #1b1b1b;
             }
             .mainHeader_arrow {
                 width: 30px;
@@ -137,12 +155,41 @@ html
             .date__wrap, .list__wrap{
                 display: flex;
             }
+            .list__wrap {
+                padding: 15px 0px 0px;
+            }
+            .date__wrap {
+                aling-items: center;
+            }
             .item__wrap {
-                display: flex;
+                display: none;
                 flex-direction: column;
+                padding-left: 15px;
             }
             .acc__wrap {
                 display: none;
+            }
+            .dayOfDoc__bodyItem:first-child {
+                padding-top: 0px;
+            }
+            .img__wrap {
+                min-width: 70px;
+            }
+            .svgShevron {
+                padding-right: 12px;
+            }
+            .svgTriangle {
+                min-width: 17px;
+            }
+            .prodName {
+                font-size: 14px;
+                color: #1b1b1b;
+                // font-weight: 600;
+            }
+            .multip {
+                font-size: 18px;
+                color: #1b1b1b;
+                // font-weight: 600;
             }
     body
         .container
@@ -166,15 +213,16 @@ html
                                         .list__wrap
                                             .svgTriangle
                                                 svg(width="10" height="10")
-                                                    polygon(points="0,0 5,5 10,0 " fill="536d79")
+                                                    polygon(points="0,0 5,5 10,0 " fill="#536d79")
                                             .list__itemQuant!='Товаров: ' + skey.itemQuant
                                     .item__wrap
                                         each item in skey
                                                 .bodyItem__item
-                                                    img.item__image(src=item.image)
+                                                    .img__wrap
+                                                        img.item__image(src=item.image)
                                                     .item__text
-                                                        p!= item.prodName
-                                                        p!= item.quantity + \' * \' + item.price
+                                                        p.prodName!= item.prodName
+                                                        p.multip!= item.quantity + \' * \' + item.price
                                                     p.item__total!= item.quantity * item.price
                                             
 
@@ -198,11 +246,11 @@ script.
 
     for (l = 0; l < accItem.length; l++){
         accItem[l].addEventListener("click", function(){
-            var accItem = this.nextElementSibling;
-            if(accItem.style.display === "flex"){
-                accItem.style.display = "none";
+            var accPrimary = this.nextElementSibling;
+            if(accPrimary.style.display === "flex"){
+                accPrimary.style.display = "none";
             }else{
-                accItem.style.display = "flex";
+                accPrimary.style.display = "flex";
             }
         });
     }
