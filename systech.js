@@ -85,31 +85,41 @@ html
                 width: 60%;
                 margin: 0 auto;
             }
-            .date {
+
+            .main-wrap {
                 background-color: #fff; 
                 width: 80%;
-                display: flex;
+                // display: flex;
                 flex-direction: row;
                 margin: 0 auto;
                 cursor: pointer;
                 // margin-bottom: 5px;
                 // box-shadow: 0 0 10px rgba(0,0,0,0.5);
             }
+            .date {
+                display: flex;
+            }
             .doc-wrap {
                 display: none;
+                border-bottom: 1px solid #ececec;
             }
-            .typeDoc, .doc, .itemQuant {
+            .accordion-main {
+                display: flex;
+                flex-direction: column;
+            }
+            .typeDoc, .doc, .itemQuant, .sumDoc {    
                 background-color: #fff; 
                 width: 80%;
                 margin: 0 auto;
                 display: flex;
                 flex-direction: column;
-                border-bottom: 1px solid #ececec;
+                // border-bottom: 1px solid #ececec;
             }
             .itemQuant {
                 display: flex;
                 flex-direction: row;
                 cursor: pointer;
+                // border-bottom: 1px solid #ececec;
             }
             .doc {
                 background-color: #fff; 
@@ -130,26 +140,29 @@ html
 
     body
         each fkey, fval in new_result
-            .date
-                svg#Layer_1(width='12', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 407.437 407.437', style='enable-background:new 0 0 407.437 407.437;', xml:space='preserve')
-                    polygon(points='386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815', fill='#546e7a')
-                .day!= fval + ' Документов: ' + fkey.dayQuant + ' (' + fkey.summDoc + ')'
-            .doc-wrap
-                each skey, sval in fkey
-                    if (sval!=='summDoc' && sval!=='dayQuant')
-                        .typeDoc!= skey.typeDoc + \' №\' + sval + ' ' + skey.sumDoc
-                        .itemQuant
-                            span
-                                svg(width='12', height='6')
-                                    polygon(points='0,1 10,1 5,6', fill='#546e7a')   
-                            span!= 'Товаров ' + skey.itemQuant              
-                        .doc
-                            each prop in skey
-                                // .typeDoc!= skey.typeDoc
-                                img(src=prop.image, alt="").prod-image
-                                .prodName!= prop.prodName
-                                .multip!= prop.quantity + \' * \' + prop.price
-                                .totalPrice!= prop.quantity * prop.price
+            .main-wrap
+                .date
+                    svg#Layer_1(width='12', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 407.437 407.437', style='enable-background:new 0 0 407.437 407.437;', xml:space='preserve')
+                        polygon(points='386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815', fill='#546e7a')
+                    .day!= fval + ' Документов: ' + fkey.dayQuant + ' (' + fkey.summDoc + ')'
+                .doc-wrap
+                    .accordion-main
+                        each skey, sval in fkey
+                            if (sval!=='summDoc' && sval!=='dayQuant')
+                                .typeDoc!= skey.typeDoc + \' №\' + sval
+                                .sumDoc!=skey.sumDoc
+                                .itemQuant
+                                    span
+                                        svg(width='12', height='6')
+                                            polygon(points='0,1 10,1 5,6', fill='#546e7a')   
+                                    span!= 'Товаров ' + skey.itemQuant              
+                                .doc
+                                    each prop in skey
+                                        // .typeDoc!= skey.typeDoc
+                                        img(src=prop.image, alt="").prod-image
+                                        .prodName!= prop.prodName
+                                        .multip!= prop.quantity + \' * \' + prop.price
+                                        .totalPrice!= prop.quantity * prop.price
                                           
 
 script.
