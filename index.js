@@ -207,16 +207,16 @@ html
                         .date__wrap
                             .svgShevron
                                 svg(width="10" height="10")
-                                    polyline(points="0,0 5,5 10,0 " fill="none" stroke="#b5b5b5" stroke-width="2") 
+                                    polyline.test(points="0,1 5,6 10,1" fill="none" stroke="#b5b5b5" stroke-width="2")
                             .mainHeader__date!= fval
-                        .mainHeader__count!= 'Документов: ' + fkey.dayQuant + ' (' + fkey.summDoc + ')'
+                        .mainHeader__count!= 'Документов: ' + fkey.dayQuant + ' (' + fkey.summDoc + ' &#8381;' + ')'
                     .acc__wrap
                         each skey, sval in fkey
                             if (sval!=='summDoc' && sval!=='dayQuant')
                                 .dayOfDoc__bodyItem
                                     .bodyItem__subHeader
                                         .subHeader__typeDoc!= skey.typeDoc + \' №\' + sval
-                                        .subHeader__count!= skey.sumDoc
+                                        .subHeader__count!= skey.sumDoc + ' &#8381;'
                                     .bodyItem__list
                                         .list__wrap
                                             .svgTriangle
@@ -230,8 +230,8 @@ html
                                                         img.item__image(src=item.image)
                                                     .item__text
                                                         p.prodName!= item.prodName
-                                                        p.multip!= item.quantity + \' * \' + item.price
-                                                    p.item__total!= item.total
+                                                        p.multip!= item.quantity + \' * \' + item.price + ' &#8381;'
+                                                    p.item__total!= item.total + ' &#8381;'
                                             
 
 script.
@@ -241,10 +241,13 @@ script.
     for (i = 0; i < accDay.length; i++){
         accDay[i].addEventListener("click", function(){
             var accMain = this.nextElementSibling;
+            var reverseShevron = this.querySelector('polyline');
             if(accMain.style.display === "block"){
                 accMain.style.display = "none";
+                reverseShevron.setAttribute("points", "0,1 5,6 10,1")
             }else{
                 accMain.style.display = "block";
+                reverseShevron.setAttribute("points", "0,6 5,1 10,6")
             }
         });
     }
