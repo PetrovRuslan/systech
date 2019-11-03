@@ -207,7 +207,7 @@ html
                         .date__wrap
                             .svgShevron
                                 svg(width="10" height="10")
-                                    polyline.test(points="0,1 5,6 10,1" fill="none" stroke="#b5b5b5" stroke-width="2")
+                                    polyline(points="0,1 5,6 10,1" fill="none" stroke="#b5b5b5" stroke-width="2")
                             .mainHeader__date!= fval
                         .mainHeader__count!= 'Документов: ' + fkey.dayQuant + ' (' + fkey.summDoc + ' &#8381;' + ')'
                     .acc__wrap
@@ -230,7 +230,7 @@ html
                                                         img.item__image(src=item.image)
                                                     .item__text
                                                         p.prodName!= item.prodName
-                                                        p.multip!= item.quantity + \' * \' + item.price + ' &#8381;'
+                                                        p.multip!= item.quantity + \' &#xD7; \' + item.price + ' &#8381;'
                                                     p.item__total!= item.total + ' &#8381;'
                                             
 
