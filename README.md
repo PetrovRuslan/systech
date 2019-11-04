@@ -1,0 +1,20 @@
+# Тестовое задание ГК "Системные технологии"
+<h3> Позиция: Junior JS-разработчик</h3>
+<hr />
+<h5>Требуемые для сборки пакеты:</h5>
+<ul>
+  <li>NodeJS</li>
+  <li>Git</li>
+  <li>Pug</li>
+</ul>
+<h5>Сборка на чистой системе CentOS 7</h5>
+<code>wget https://github.com/PetrovRuslan/systech/blob/master/make.sh</code><br />
+<code>chmod +x make.sh</code><br />
+<code>./make.sh</code><br />
+<h5>Если пакеты присутствуют</h5>
+<code>git clone https://github.com/PetrovRuslan/systech</code><br />
+<code>cd systech</code><br />
+
+<code>npm init</code><br />
+<code>npm i pug --save-dev</code><br />
+<code>node index.js > index.html</code><br />
