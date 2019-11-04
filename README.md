@@ -3,9 +3,10 @@
 <hr />
 <h5>Требуемые для сборки пакеты:</h5>
 <ul>
-  <li>NodeJS</li>
-  <li>Git</li>
-  <li>Pug</li>
+  <li>NodeJS v10.17.0</li>
+  <li>npm 6.11.3</li>
+  <li>Git v2.16.5</li>
+  <li>Pug v2.0.4</li>
 </ul>
 <h5>Сборка на чистой системе CentOS 7</h5>
 <code>wget https://github.com/PetrovRuslan/systech/blob/master/make.sh</code><br />
