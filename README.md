@@ -9,7 +9,7 @@
   <li>Pug v2.0.4</li>
 </ul>
 <h5>Сборка на чистой системе CentOS 7</h5>
-<code>wget https://github.com/PetrovRuslan/systech/blob/master/make.sh</code><br />
+<code>wget https://raw.githubusercontent.com/PetrovRuslan/systech/master/make.sh</code><br />
 <code>chmod +x make.sh</code><br />
 <code>./make.sh</code><br />
 <h5>Если пакеты присутствуют</h5>
