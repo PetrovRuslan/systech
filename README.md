@@ -19,3 +19,8 @@
 <code>npm init</code><br />
 <code>npm i pug --save-dev</code><br />
 <code>node index.js > index.html</code><br />
+
+<h5>Просто посмотреть результат</h5>
+<code>wget https://raw.githubusercontent.com/PetrovRuslan/systech/master/index.js</code><br />
+<code>node index.js > index.html</code><br />
+
