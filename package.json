@@ -1,0 +1,22 @@
+{
+  "name": "systech",
+  "version": "1.0.0",
+  "description": "<h3> Позиция: Junior JS-разработчик</h3> <hr /> <h5>Требуемые для сборки пакеты:</h5> <ul>   <li>NodeJS v10.17.0</li>   <li>npm 6.11.3</li>   <li>Git v2.16.5</li>   <li>Pug v2.0.4</li> </ul> <h5>Сборка на чистой системе CentOS 7</h5> <code>wget https://raw.githubusercontent.com/PetrovRuslan/systech/master/make.sh</code><br /> <code>chmod +x make.sh</code><br /> <code>./make.sh</code><br /> <h5>Если пакеты присутствуют</h5> <code>git clone https://github.com/PetrovRuslan/systech</code><br /> <code>cd systech</code><br />",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PetrovRuslan/systech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PetrovRuslan/systech/issues"
+  },
+  "homepage": "https://github.com/PetrovRuslan/systech#readme",
+  "devDependencies": {
+    "pug": "^2.0.4"
+  }
+}
