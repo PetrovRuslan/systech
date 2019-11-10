@@ -22,5 +22,6 @@
 
 <h5>Просто посмотреть результат</h5>
 <code>wget https://raw.githubusercontent.com/PetrovRuslan/systech/master/index.js</code><br />
+<code>https://raw.githubusercontent.com/PetrovRuslan/systech/master/index.pug</code><br />
 <code>node index.js > index.html</code><br />
 
